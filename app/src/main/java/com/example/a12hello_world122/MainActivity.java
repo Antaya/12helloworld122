@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String fotoMessage = String.valueOf(new Random().nextInt());
+        String fotoMessage = String.valueOf(new Random().nextInt(100));
 
         TextView fotoText = findViewById(R.id.textView_foto);
         fotoText.setText(fotoMessage);
